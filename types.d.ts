@@ -9,3 +9,10 @@ type BlogPost = {
     meta: Meta,
     content: ReactElement<any, string | JSXElementConstructor<any>>,
 }
+
+type TodoItem = {
+    userId: number,
+    id: number,
+    title: string,
+    completed: boolean,
+}
