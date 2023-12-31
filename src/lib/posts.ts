@@ -77,7 +77,8 @@ export async function getPostsMeta(): Promise<Meta[] | undefined> {
     const res = await fetch('https://api.github.com/repos/Faris-Abuali/my-blogposts/git/trees/main?recursive=1', {
         headers: {
             Accept: 'application/vnd.github+json',
-            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+            // Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+            Authorization: `Bearer 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`,
             'X-GitHub-Api-Version': '2022-11-28',
         }
     })
